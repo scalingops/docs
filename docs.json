@@ -50,6 +50,7 @@
             "pages": [
               "features/calendar",
               "features/unified-compliance-settings",
+              "features/compliance-scheduling",
               "features/import-export"
             ]
           }
