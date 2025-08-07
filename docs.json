@@ -53,7 +53,8 @@
               "features/compliance-scheduling",
               "features/import-export",
               "features/ai-compliance-notes",
-              "features/ai-text-improvement"
+              "features/ai-text-improvement",
+              "features/report-builder-module-availability"
             ]
           }
         ]
