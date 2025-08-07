@@ -52,7 +52,8 @@
               "features/unified-compliance-settings",
               "features/compliance-scheduling",
               "features/import-export",
-              "features/ai-compliance-notes"
+              "features/ai-compliance-notes",
+              "features/ai-text-improvement"
             ]
           }
         ]
