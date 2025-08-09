@@ -56,6 +56,14 @@
               "features/ai-text-improvement",
               "features/report-builder-module-availability"
             ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/component-structure",
+              "development/ui-fixes",
+              "development/pagination-implementation"
+            ]
           }
         ]
       },
