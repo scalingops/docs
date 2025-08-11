@@ -52,6 +52,7 @@
               "features/unified-compliance-settings",
               "features/compliance-scheduling",
               "features/import-export",
+              "features/survey-email-templates",
               "features/ai-compliance-notes",
               "features/ai-text-improvement",
               "features/report-builder-module-availability"
