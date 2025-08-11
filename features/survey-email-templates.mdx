@@ -78,16 +78,16 @@ Integrated into the Survey Settings page as the "Email Templates" tab.
 
 ### Available Variables
 
-The system provides a comprehensive set of template variables for dynamic email content:
+The system provides a comprehensive set of template variables for dynamic email content in the context of a **Managed Service Provider (MSP)** sending surveys to their clients:
 
 ```typescript
 const AVAILABLE_VARIABLES = [
   { key: "{{recipient_name}}", description: "Recipient's name" },
-  { key: "{{company_name}}", description: "Company name" },
+  { key: "{{company_name}}", description: "Client company name (being surveyed)" },
   { key: "{{survey_title}}", description: "Survey title" },
   { key: "{{survey_url}}", description: "Survey link URL" },
   { key: "{{sender_name}}", description: "Sender's name" },
-  { key: "{{sender_company}}", description: "Your company name" },
+  { key: "{{sender_company}}", description: "MSP company name (sending the survey)" },
   { key: "{{expires_date}}", description: "Survey expiration date" },
 ];
 ```
@@ -99,14 +99,31 @@ Variables can be inserted in both subject lines and email content:
 
 ```html
 <!-- Subject: -->
-Your feedback request from {{company_name}}
+Your feedback request from {{sender_company}}
 
 <!-- Email body: -->
 <p>Hi {{recipient_name}},</p>
 <p>We'd love to hear about your experience with {{company_name}}.</p>
+<p>As your managed service provider, {{sender_company}} values your feedback.</p>
 <a href="{{survey_url}}">Take Survey</a>
 <p>— The {{sender_company}} Team</p>
 ```
+
+### MSP Context Explanation
+
+In a **Managed Service Provider** environment, there are two distinct companies involved in survey communications:
+
+| Variable | Represents | Example |
+|----------|------------|---------|
+| `{{company_name}}` | **Client Company** (being surveyed) | "ACME Corp", "Smith Industries" |
+| `{{sender_company}}` | **MSP Company** (sending the survey) | "TechSupport Plus", "IT Solutions Inc." |
+
+**Typical Use Case:**
+- MSP "TechSupport Plus" provides IT services to client "ACME Corp"
+- TechSupport Plus sends an NPS survey to ACME Corp employees
+- Email references both companies appropriately:
+  - "How was your experience with **ACME Corp**'s IT services?"
+  - "This survey is from **TechSupport Plus**, your IT service provider"
 
 #### Variable Extraction
 The system automatically extracts variables from template content:
