@@ -1,0 +1,264 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Docs: Getting started",
+        "description": "Onboarding checklist to first value.",
+        "details": "Enable integrations; create first report and planner template; invite users and set roles.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Docs: Company Overview guide",
+        "description": "Access dashboard, interpret tiles, drill into companies.",
+        "details": "Screenshots; permissions; example workflow.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Docs: Reporting & Analytics guide",
+        "description": "Builder basics, templates, sharing, PDF export.",
+        "details": "@task-lists.mdc\n- [ ] Access/permissions section\n- [ ] Screens/GIF for builder and templates\n- [ ] Share and PDF export flows\n- [ ] QBR-from-template walkthrough",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Docs: Compliance & Auditing guide",
+        "description": "Checks/groups setup, scheduling runs, viewing history.",
+        "details": "Explain playbooks; quarterly run workflow example.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Docs: Ticketing guide",
+        "description": "Categories, templates, AI ticket creation with PSA delivery.",
+        "details": "@task-lists.mdc\n- [ ] PSA config prerequisites\n- [ ] AI creation steps and tips\n- [ ] End-to-end: AI draft → review → send to PSA",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Docs: Surveys & NPS guide",
+        "description": "Create/send surveys, tokens, analytics, public forms.",
+        "details": "@task-lists.mdc\n- [ ] Send NPS/custom survey\n- [ ] Word map/person analytics\n- [ ] Example: insights → planner tasks",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Docs: Calendar & Meetings guide",
+        "description": "My/List/Recurring views, settings, blocks, M365 sync.",
+        "details": "Requirements to enable M365; scheduling workflow steps.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Docs: Devices guide",
+        "description": "Overview of device inventory and linking context.",
+        "details": "Screenshots and tips to cross-reference tickets/compliance.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "low",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Docs: Integrations guide",
+        "description": "M365 Secure Score and PSA imports (Halo/CW).",
+        "details": "@task-lists.mdc\n- [ ] M365 enablement steps and scopes\n- [ ] Secure Score actions usage\n- [ ] PSA import steps and troubleshooting",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Docs: Settings & Administration guide",
+        "description": "User/Tenant/Companies, roles, device types, rules, statuses, templates, billing, import/export.",
+        "details": "Permission matrix and where each setting impacts features.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 11,
+        "title": "Docs: Public Surveys (token) guide",
+        "description": "Explain security, expiry, completed states, and branding.",
+        "details": "Public form access patterns; recommended practices.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 12,
+        "title": "Docs: Permissions quick reference",
+        "description": "Map nav permissions to routes and features.",
+        "details": "Admin-only vs client-facing; tenant vs company scopes.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 13,
+        "title": "Docs: Troubleshooting index",
+        "description": "Common issues across integrations, reporting, and surveys.",
+        "details": "M365 connection; PSA import; PDF export; survey token errors.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 14,
+        "title": "Docs: Security & data handling notes",
+        "description": "Document tenant scoping, RBAC, public link considerations.",
+        "details": "Data handling for survey links and PDF export; best practices.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 15,
+        "title": "Docs: Release notes template",
+        "description": "Template and structure for ongoing release notes.",
+        "details": "Link feature docs; changelog best practices; AI roadmap callout.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "low",
+        "subtasks": []
+      },
+      {
+        "id": 16,
+        "title": "Docs: Glossary",
+        "description": "Define key product terms and link to modules.",
+        "details": "Keep concise and searchable; add screenshots where helpful.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "low",
+        "subtasks": []
+      },
+      {
+        "id": 17,
+        "title": "Docs: Example QBR pack recipe",
+        "description": "End-to-end recipe from surveys to planner to report and export.",
+        "details": "Screens for each step; template references; time-saving tips.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 18,
+        "title": "Docs: Accessibility for public forms",
+        "description": "Accessibility guidance for NPS/survey forms.",
+        "details": "Keyboard navigation; high-contrast; localization tips.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "low",
+        "subtasks": []
+      },
+      {
+        "id": 19,
+        "title": "Docs: API references (public surveys)",
+        "description": "Overview of public survey endpoints and security.",
+        "details": "Headers, rate limits, example requests.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 20,
+        "title": "Docs: PDF export troubleshooting",
+        "description": "Common PDF export errors and fixes.",
+        "details": "Browser compatibility; recommended print styles; support path.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 21,
+        "title": "Docs: Screenshot/GIF capture pass",
+        "description": "Capture and organize visuals for all guides.",
+        "details": "Asset naming, storage, and insertion; review for clarity.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 22,
+        "title": "Docs: Review/QA pass",
+        "description": "Proofread, validate links, ensure consistency of tone.",
+        "details": "Fix broken links; check route accuracy; add AI tips boxes.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 23,
+        "title": "Docs: Final publish and navigation",
+        "description": "Wire pages into sidebar, add tags, redirects as needed.",
+        "details": "Update navigation; final checks; publish.",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-11T23:57:35.483Z",
+      "description": "Default tasks context",
+      "updated": "2025-08-12T00:02:01.761Z"
+    }
+  }
+}
