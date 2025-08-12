@@ -1,6 +1,6 @@
 ---
-title: AI Compliance Notes
-description: Generate professional client-facing notes from technical details using AI
+title: "AI Compliance Notes"
+description: "Generate professional client-facing notes from technical details using AI"
 ---
 
 # AI Compliance Notes
@@ -10,10 +10,12 @@ The AI Compliance Notes feature helps vCIOs and technicians quickly generate pro
 ## Overview
 
 When working on compliance checks, technicians often need to maintain two sets of notes:
+
 - **Private notes**: Technical details, internal observations, and detailed remediation steps
 - **Public notes**: Professional, client-facing summaries written in business language
 
 The AI Draft feature automates the creation of public notes by analyzing your private notes and generating professional summaries that:
+
 - Use clear business language without technical jargon
 - Focus on business impact and value
 - Provide actionable remediation steps
@@ -22,9 +24,9 @@ The AI Draft feature automates the creation of public notes by analyzing your pr
 ## Prerequisites
 
 Before using the AI compliance notes feature, ensure:
-1. Your organization has configured an OpenAI API key
-2. You have private notes written for the compliance check
-3. You have permission to edit compliance checks
+
+1. You have private notes written for the compliance check
+2. You have permission to edit compliance checks
 
 ## Using AI Draft
 
@@ -39,12 +41,13 @@ Before using the AI compliance notes feature, ensure:
 7. Save the compliance check
 
 <Note>
-The AI Draft button is only enabled when private notes are present, as it uses them as the source for generating public notes.
+  The AI Draft button is only enabled when private notes are present, as it uses them as the source for generating public notes.
 </Note>
 
 ### Generated Content Format
 
 The AI generates notes with:
+
 - **Clear headers** using Markdown formatting
 - **Bullet points** for easy scanning
 - **Structured sections** for issue summary, impact, and remediation
@@ -76,28 +79,15 @@ Your network protection requires immediate attention to maintain security standa
 - Schedule quarterly security reviews
 ```
 
-## Configuration
-
-### Setting Up OpenAI Integration
-
-Add your OpenAI API key to your environment variables:
-
-```bash
-OPENAI_API_KEY=your-api-key-here
-```
-
-<Warning>
-Keep your OpenAI API key secure and never commit it to version control.
-</Warning>
-
 ### Customizing the AI Behavior
 
 The AI assistant is configured to:
+
 - Generate content suitable for client communication
 - Focus on business value and impact
 - Avoid technical jargon
 - Maintain a professional, direct tone
-- Limit output to approximately 120 words
+- Limit output to approximately 1000 words
 
 These settings are optimized for MSP compliance reporting and cannot be customized per-user.
 
@@ -124,7 +114,7 @@ Always review AI-generated content before saving:
 
 ## Limitations
 
-- Maximum output length of approximately 120 words
+- Maximum output length of approximately 1000 words
 - Requires private notes to generate content
 - Generated content should always be reviewed before client delivery
 - AI may not capture client-specific terminology or preferences
@@ -135,21 +125,15 @@ Always review AI-generated content before saving:
 ### AI Draft Button Disabled
 
 If the AI Draft button is disabled:
+
 - Ensure you have entered private notes
 - Check that you have edit permissions for the compliance check
 - Verify the check is not in historical/read-only mode
 
-### Generation Fails
-
-If content generation fails:
-- Verify your OpenAI API key is configured correctly
-- Check your OpenAI account has available credits
-- Ensure your internet connection is stable
-- Try reducing the length of your private notes
-
 ### Content Not Appearing
 
 If generated content doesn't appear immediately:
+
 - The content streams in real-time - wait a few seconds
 - Check for any error messages in the toast notification
 - Refresh the dialog if the issue persists
@@ -159,6 +143,7 @@ If generated content doesn't appear immediately:
 ### Architecture
 
 The AI compliance notes feature uses:
+
 - **Server Actions** for secure API calls
 - **Streaming responses** for real-time content display
 - **Markdown to HTML conversion** for rich text formatting
