@@ -17,7 +17,8 @@
             "group": "Getting Started",
             "pages": [
               "user-guides/index",
-              "user-guides/quick-start"
+              "user-guides/quick-start",
+              "user-guides/keyboard-shortcuts"
             ]
           },
           {
