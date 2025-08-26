@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "MSPortal.ai Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,74 +11,114 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "User Guides",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "user-guides/index",
+              "user-guides/quick-start"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Module Guides",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "user-guides/company-overview-guide",
+              "user-guides/surveys-guide",
+              "user-guides/goals-guide",
+              "user-guides/planner-guide",
+              "user-guides/budgets-guide",
+              "user-guides/calendar-guide",
+              "user-guides/microsoft-365-guide",
+              "user-guides/ticketing-guide",
+              "user-guides/compliance-guide",
+              "user-guides/devices-guide",
+              "user-guides/reporting-guide"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Configuration",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          },
-          {
-            "group": "Features",
-            "pages": [
-              "features/calendar",
-              "features/unified-compliance-settings",
-              "features/compliance-scheduling",
-              "features/import-export",
-              "features/survey-email-templates",
-              "features/ai-compliance-notes",
-              "features/ai-text-improvement",
-              "features/report-builder-module-availability"
-            ]
-          },
-          {
-            "group": "Development",
-            "pages": [
-              "development/component-structure",
-              "development/ui-fixes",
-              "development/pagination-implementation"
+              "user-guides/settings-guide",
+              "user-guides/integrations-guide",
+              "user-guides/admin-guide"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Modules",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Overview & Planning",
+            "pages": [
+              "modules/company-overview",
+              "modules/surveys",
+              "modules/goals",
+              "modules/planner",
+              "modules/budgets"
+            ]
+          },
+          {
+            "group": "Engagement",
+            "pages": [
+              "modules/calendar"
+            ]
+          },
+          {
+            "group": "Service Delivery",
+            "pages": [
+              "modules/microsoft-365",
+              "modules/ticketing",
+              "modules/compliance",
+              "modules/devices",
+              "modules/reporting"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "modules/settings",
+              "modules/users",
+              "modules/companies",
+              "modules/integrations",
+              "modules/admin"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "Feature Documentation",
+            "pages": [
+              "features/ai-compliance-notes",
+              "features/ai-text-improvement",
+              "features/calendar",
+              "features/compliance-scheduling",
+              "features/import-export",
+              "features/mobile-drag-drop-reporting",
+              "features/multi-factor-authentication",
+              "features/report-builder-module-availability",
+              "features/survey-email-templates",
+              "features/unified-compliance-settings",
+              "features/user-settings-enhancements"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "API Documentation",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoints",
             "pages": [
               "api-reference/endpoint/get",
               "api-reference/endpoint/create",
@@ -92,19 +132,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "MSPortal.ai",
+          "href": "https://msportal.ai",
+          "icon": "globe"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "Support",
+          "href": "mailto:support@msportal.ai",
+          "icon": "life-ring"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Status",
+          "href": "https://status.msportal.ai",
+          "icon": "signal"
         }
       ]
     }
@@ -117,20 +157,20 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@msportal.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.msportal.ai"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/msportalai",
+      "github": "https://github.com/msportalai",
+      "linkedin": "https://linkedin.com/company/msportalai"
     }
   }
 }

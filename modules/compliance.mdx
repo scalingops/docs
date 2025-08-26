@@ -1,0 +1,269 @@
+---
+title: 'Compliance'
+description: 'Manage compliance frameworks, checks, and audit schedules'
+icon: 'shield-check'
+---
+
+## Overview
+
+The Compliance module enables comprehensive management of compliance requirements across multiple frameworks. Schedule compliance runs, track check results, manage issues, and maintain audit trails for all your clients.
+
+## Key Features
+
+<CardGroup cols={2}>
+  <Card title="Framework Management" icon="book">
+    Support for multiple compliance frameworks
+  </Card>
+  <Card title="Automated Checks" icon="robot">
+    Schedule and run automated compliance checks
+  </Card>
+  <Card title="Issue Tracking" icon="exclamation-triangle">
+    Track and remediate compliance issues
+  </Card>
+  <Card title="Audit History" icon="history">
+    Complete audit trail of all compliance activities
+  </Card>
+</CardGroup>
+
+## Compliance Frameworks
+
+### Supported Frameworks
+- **HIPAA**: Healthcare compliance
+- **PCI DSS**: Payment card industry standards
+- **SOC 2**: Service organization controls
+- **GDPR**: Data privacy regulations
+- **NIST**: Cybersecurity framework
+- **ISO 27001**: Information security
+- **Custom Frameworks**: Define your own
+
+### Framework Configuration
+Each framework includes:
+- Control requirements
+- Check definitions
+- Evidence requirements
+- Remediation guidance
+- Reporting templates
+
+## Compliance Checks
+
+### Check Types
+<Tabs>
+  <Tab title="Technical">
+    Automated system and security checks
+  </Tab>
+  <Tab title="Administrative">
+    Policy and procedure reviews
+  </Tab>
+  <Tab title="Physical">
+    Physical security assessments
+  </Tab>
+  <Tab title="Manual">
+    Manual verification items
+  </Tab>
+</Tabs>
+
+### Check Management
+Configure compliance checks:
+- Check name and description
+- Framework association
+- Severity level
+- Automation capability
+- Evidence requirements
+
+### Check Groups
+Organize checks into logical groups:
+- Security controls
+- Access management
+- Data protection
+- Network security
+- Physical security
+- Policy compliance
+
+## Compliance Runs
+
+### Running Compliance Checks
+<Steps>
+  <Step title="Select Framework">
+    Choose compliance framework to assess
+  </Step>
+  <Step title="Choose Scope">
+    Select company and systems to check
+  </Step>
+  <Step title="Configure Checks">
+    Select specific checks or run all
+  </Step>
+  <Step title="Execute Run">
+    Run checks manually or schedule
+  </Step>
+  <Step title="Review Results">
+    Analyze findings and issues
+  </Step>
+</Steps>
+
+### Run Status
+- **Scheduled**: Planned future run
+- **Running**: Currently executing
+- **Completed**: Successfully finished
+- **Failed**: Errors during execution
+- **Cancelled**: Manually stopped
+
+### Scheduling
+Set up automated compliance runs:
+- Daily, weekly, monthly, quarterly
+- Custom schedules
+- Blackout periods
+- Notification settings
+
+## Issue Management
+
+### Issue Tracking
+When checks fail, issues are created:
+- Issue description
+- Severity level (Critical, High, Medium, Low)
+- Affected systems
+- Remediation steps
+- Due date for resolution
+
+### Issue Workflow
+<Steps>
+  <Step title="Detection">
+    Issue identified during compliance run
+  </Step>
+  <Step title="Assignment">
+    Assign to responsible party
+  </Step>
+  <Step title="Remediation">
+    Implement fixes
+  </Step>
+  <Step title="Verification">
+    Verify issue resolved
+  </Step>
+  <Step title="Closure">
+    Document and close issue
+  </Step>
+</Steps>
+
+## Compliance History
+
+### Audit Trail
+Complete history of:
+- All compliance runs
+- Check results over time
+- Issue creation and resolution
+- Configuration changes
+- User actions
+
+### Trend Analysis
+Track compliance trends:
+- Compliance scores over time
+- Issue frequency
+- Resolution times
+- Framework coverage
+- Improvement areas
+
+## Settings
+
+### Compliance Settings
+Configure module behavior:
+- Default frameworks
+- Check frequencies
+- Notification rules
+- Escalation paths
+- Report formats
+
+### Groups Configuration
+Manage check groups:
+- Create custom groups
+- Assign checks to groups
+- Set group priorities
+- Configure group scheduling
+
+### Schedule Management
+Set up run schedules:
+- Recurring schedules
+- One-time runs
+- Maintenance windows
+- Excluded dates
+
+## Reporting
+
+### Compliance Reports
+Generate comprehensive reports:
+- Executive summaries
+- Detailed findings
+- Remediation plans
+- Trend analysis
+- Audit reports
+
+### Report Types
+- **Status Reports**: Current compliance posture
+- **Gap Analysis**: Areas needing attention
+- **Progress Reports**: Improvement tracking
+- **Audit Reports**: Evidence for auditors
+- **Certificate Reports**: Compliance attestation
+
+## AI Features
+
+### AI-Generated Compliance Notes
+Use AI to:
+- Generate remediation plans
+- Create compliance documentation
+- Summarize findings
+- Suggest improvements
+
+### Intelligent Scheduling
+AI-powered scheduling:
+- Optimal run times
+- Resource balancing
+- Conflict avoidance
+- Priority-based scheduling
+
+## Integration Points
+
+### Planner Integration
+- Schedule compliance activities
+- Track remediation tasks
+- Plan audit preparations
+
+### Company Overview
+- Compliance metrics on dashboard
+- Issue summaries
+- Recent run status
+
+### Reports Module
+- Include compliance data
+- Generate audit packages
+- Export evidence
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Regular Scheduling">
+    Run compliance checks at consistent intervals
+  </Accordion>
+  <Accordion title="Quick Remediation">
+    Address critical issues within 24-48 hours
+  </Accordion>
+  <Accordion title="Documentation">
+    Maintain detailed evidence for all remediations
+  </Accordion>
+  <Accordion title="Continuous Improvement">
+    Use trend data to identify systemic issues
+  </Accordion>
+</AccordionGroup>
+
+## Permissions
+
+Compliance permissions:
+- `read_compliance` - View compliance data
+- `run_compliance` - Execute compliance runs
+- `manage_compliance` - Configure settings
+- `remediate_compliance` - Fix issues
+- `audit_compliance` - Access audit features
+
+## Related Modules
+
+- [Company Overview](/modules/company-overview) - Compliance dashboard widgets
+- [Planner](/modules/planner) - Schedule compliance tasks
+- [Reports](/modules/reporting) - Generate compliance reports
+- [Settings](/modules/settings) - Configure compliance frameworks
