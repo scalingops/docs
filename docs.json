@@ -16,33 +16,101 @@
           {
             "group": "Getting Started",
             "pages": [
-              "user-guides/index",
-              "user-guides/quick-start",
-              "user-guides/keyboard-shortcuts"
+              "user-guides/getting-started/index",
+              "user-guides/getting-started/quick-start",
+              "user-guides/getting-started/keyboard-shortcuts",
+              "user-guides/getting-started/Onboarding-checklist"
             ]
           },
           {
-            "group": "Module Guides",
+            "group": "Training",
             "pages": [
-              "user-guides/company-overview-guide",
-              "user-guides/surveys-guide",
-              "user-guides/goals-guide",
-              "user-guides/planner-guide",
-              "user-guides/budgets-guide",
-              "user-guides/calendar-guide",
-              "user-guides/microsoft-365-guide",
-              "user-guides/ticketing-guide",
-              "user-guides/compliance-guide",
-              "user-guides/devices-guide",
-              "user-guides/reporting-guide"
+              {
+                "group": "Training Resources",
+                "pages": [
+                  "user-guides/training/index",
+                  "user-guides/training/how-to-enable-training"
+                ]
+              }
             ]
           },
           {
-            "group": "Configuration",
+            "group": "Overview & Planning",
             "pages": [
-              "user-guides/settings-guide",
-              "user-guides/integrations-guide",
-              "user-guides/admin-guide"
+              {
+                "group": "Company Overview",
+                "pages": ["user-guides/company-overview/index"]
+              },
+              {
+                "group": "Surveys",
+                "pages": ["user-guides/surveys/index"]
+              },
+              {
+                "group": "Goals",
+                "pages": ["user-guides/goals/index"]
+              },
+              {
+                "group": "Planner",
+                "pages": ["user-guides/planner/index"]
+              },
+              {
+                "group": "Budgets",
+                "pages": ["user-guides/budgets/index"]
+              }
+            ]
+          },
+          {
+            "group": "Engagement",
+            "pages": [
+              {
+                "group": "Calendar",
+                "pages": ["user-guides/calendar/index"]
+              }
+            ]
+          },
+          {
+            "group": "Service Delivery",
+            "pages": [
+              {
+                "group": "Microsoft 365",
+                "pages": ["user-guides/microsoft-365/index"]
+              },
+              {
+                "group": "Ticketing",
+                "pages": ["user-guides/ticketing/index"]
+              },
+              {
+                "group": "Compliance",
+                "pages": [
+                  "user-guides/compliance/index",
+                  "user-guides/compliance/Adding CIS Benchmarks"
+                ]
+              },
+              {
+                "group": "Devices",
+                "pages": ["user-guides/devices/index"]
+              },
+              {
+                "group": "Reporting",
+                "pages": ["user-guides/reporting/index"]
+              }
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              {
+                "group": "Settings",
+                "pages": ["user-guides/settings/index"]
+              },
+              {
+                "group": "Integrations",
+                "pages": ["user-guides/integrations/index"]
+              },
+              {
+                "group": "Admin",
+                "pages": ["user-guides/admin/index"]
+              }
             ]
           }
         ]
