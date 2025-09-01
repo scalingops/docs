@@ -1,92 +1,167 @@
 ---
-title: Ticketing Module
-description: Manage support requests, incidents, and service desk operations
+title: Ticketing Integration
+description: View and analyze tickets from ConnectWise and Halo PSA
 ---
 
-# Ticketing Module
+# Ticketing Integration
 
-The Ticketing module provides a comprehensive help desk and service management system to track, manage, and resolve support requests efficiently.
+The Ticketing module in MSPortal.ai integrates with your existing PSA (Professional Services Automation) tools to provide ticket visibility and analytics within the platform.
+
+## Supported Integrations
+
+MSPortal.ai currently integrates with:
+- **ConnectWise Manage** - Full ticket data synchronization
+- **HaloPSA** - Comprehensive ticket integration
+
+<Note>
+The Ticketing module requires an active integration with ConnectWise or HaloPSA. It does not provide standalone ticketing functionality.
+</Note>
 
 ## Key Features
 
-- **Ticket Management** - Create, track, and resolve support tickets
-- **Automated Routing** - Smart assignment based on rules and categories
-- **SLA Tracking** - Monitor service level agreements
-- **Knowledge Base** - Self-service documentation and solutions
-- **Customer Portal** - Allow users to submit and track tickets
-- **Reporting Dashboard** - Analytics and performance metrics
+- **Ticket Visibility** - View tickets from your PSA within MSPortal.ai
+- **Company Association** - See tickets linked to specific companies
+- **Analytics & Reporting** - Generate insights from ticket data
+- **Cross-Module Integration** - Reference tickets in reports and compliance
+- **Real-time Sync** - Stay updated with latest ticket information
 
-## Getting Started
+## Prerequisites
 
-1. Configure ticket categories and priorities
-2. Set up assignment rules and workflows
-3. Define SLA policies and escalation rules
-4. Create your team structure and roles
-5. Start accepting and managing tickets
+Before using the Ticketing module:
+1. Have an active ConnectWise Manage or HaloPSA account
+2. Configure the PSA integration in Settings
+3. Map companies between MSPortal.ai and your PSA
+4. Verify API permissions for ticket access
 
-## Common Tasks
+## Setting Up Integration
 
-- **Creating Tickets** - Log new support requests
-- **Assigning Tickets** - Route tickets to appropriate technicians
-- **Updating Status** - Track ticket progress through resolution
-- **Adding Notes** - Document troubleshooting steps
-- **Closing Tickets** - Complete and archive resolved issues
+### ConnectWise Integration
 
-## Ticket Types
+<Steps>
+  <Step title="Navigate to Settings">
+    Go to Settings → Integrations → ConnectWise
+  </Step>
+  <Step title="Enter API Credentials">
+    Provide your ConnectWise API URL, company ID, and credentials
+  </Step>
+  <Step title="Configure Sync Settings">
+    Select which ticket types and statuses to synchronize
+  </Step>
+  <Step title="Map Companies">
+    Link MSPortal.ai companies to ConnectWise companies
+  </Step>
+  <Step title="Initial Sync">
+    Run the initial synchronization to import existing tickets
+  </Step>
+</Steps>
 
-- **Incidents** - System outages and critical issues
-- **Service Requests** - Standard service catalog items
-- **Problems** - Root cause analysis for recurring issues
-- **Changes** - Request for system modifications
-- **Questions** - General inquiries and how-to requests
+### HaloPSA Integration
 
-## Workflow Management
+<Steps>
+  <Step title="Navigate to Settings">
+    Go to Settings → Integrations → HaloPSA
+  </Step>
+  <Step title="API Configuration">
+    Enter your Halo instance URL and API credentials
+  </Step>
+  <Step title="Select Data Types">
+    Choose ticket categories to synchronize
+  </Step>
+  <Step title="Company Mapping">
+    Connect MSPortal.ai companies with Halo clients
+  </Step>
+  <Step title="Synchronize">
+    Execute initial data import
+  </Step>
+</Steps>
 
-### Ticket Lifecycle
-1. **New** - Initial ticket creation
-2. **Assigned** - Routed to technician
-3. **In Progress** - Active work underway
-4. **Pending** - Awaiting information or approval
-5. **Resolved** - Solution implemented
-6. **Closed** - Ticket archived
+## Using the Ticketing Module
 
-### Priority Levels
-- **Critical** - Business-stopping issues
-- **High** - Significant impact on operations
-- **Medium** - Moderate impact, workaround available
-- **Low** - Minor issues or requests
+### Viewing Tickets
 
-## SLA Management
+1. Navigate to **Ticketing** in the sidebar
+2. Select a company or view all tickets
+3. Use filters to narrow results:
+   - Status (Open, Closed, Pending)
+   - Priority levels
+   - Date ranges
+   - Assigned technician
 
-- **Response Times** - Initial response commitments
-- **Resolution Times** - Target completion windows
-- **Escalation Rules** - Automatic escalation triggers
-- **Business Hours** - SLA clock calculations
-- **Reporting** - SLA compliance metrics
+### Ticket Information
+
+Each synchronized ticket displays:
+- **Ticket Number** - PSA ticket identifier
+- **Summary** - Brief description
+- **Status** - Current ticket state
+- **Priority** - Urgency level
+- **Company** - Associated client
+- **Assigned To** - Responsible technician
+- **Created/Updated** - Timestamps
+- **Time Entries** - Logged hours (if available)
+
+### Analytics & Reporting
+
+The Ticketing module provides:
+- **Ticket Volume** - Trends over time
+- **Resolution Times** - Average time to close
+- **By Company** - Ticket distribution across clients
+- **By Category** - Common issue types
+- **SLA Performance** - If SLA data is available
+
+## Integration with Other Modules
+
+### Reporting
+- Include ticket metrics in client reports
+- Show support activity alongside other KPIs
+- Generate ticket trend analyses
+
+### Company Overview
+- Display recent tickets on company dashboards
+- Show ticket counts in company health metrics
+
+### Compliance
+- Reference tickets in compliance documentation
+- Link remediation tickets to compliance issues
 
 ## Best Practices
 
-- **Clear Descriptions** - Capture detailed issue information
-- **Proper Categorization** - Use correct ticket types and categories
-- **Regular Updates** - Keep requesters informed of progress
-- **Knowledge Sharing** - Document solutions for future reference
-- **Metric Tracking** - Monitor team performance indicators
+- **Regular Sync** - Ensure synchronization runs frequently
+- **Company Mapping** - Keep company associations up to date
+- **Data Hygiene** - Clean up closed tickets periodically
+- **Permission Management** - Limit ticket visibility as needed
 
-## Automation Features
+## Limitations
 
-- **Auto-Assignment** - Rule-based ticket routing
-- **Email Integration** - Create tickets from emails
-- **Notifications** - Automated status updates
-- **Workflows** - Custom approval processes
-- **Templates** - Standardized responses
+- Read-only access (ticket creation/editing must be done in PSA)
+- Sync frequency depends on API rate limits
+- Historical data limited by PSA retention policies
+- Custom fields may not all be available
+
+## Troubleshooting
+
+### Tickets Not Appearing
+- Verify integration is active in Settings
+- Check company mapping configuration
+- Ensure API credentials are valid
+- Review sync logs for errors
+
+### Sync Delays
+- Check PSA API status
+- Verify network connectivity
+- Review rate limiting settings
+- Contact support if delays persist
+
+### Missing Ticket Data
+- Confirm API permissions include ticket access
+- Check field mapping configuration
+- Verify ticket types are included in sync
 
 ## Related Resources
 
-- [Devices](../devices/index) - Link tickets to device records
-- [Reporting](../reporting/index) - Generate ticket analytics
-- [Microsoft 365](../microsoft-365/index) - Integration with Teams
-- [Knowledge Base](../admin/index) - Manage solution articles
+- [Integrations Setup](../integrations/index) - Configure PSA connections
+- [Reporting](../reporting/index) - Create ticket-based reports
+- [Company Overview](../company-overview/index) - View company ticket metrics
 
-## Need Help?
+## Support
 
-For assistance with the Ticketing module, contact support@msportal.ai or review our ITIL best practices guide.
+For assistance with ticket integration, consult your PSA documentation or contact MSPortal.ai support.
