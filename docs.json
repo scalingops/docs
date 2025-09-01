@@ -39,7 +39,7 @@
             "pages": [
               {
                 "group": "Company Overview",
-                "pages": ["user-guides/company-overview/index"]
+                "pages": ["user-guides/company-overview/index", "user-guides/company-overview/audit"]
               },
               {
                 "group": "Surveys",
