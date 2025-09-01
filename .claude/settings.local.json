@@ -6,9 +6,16 @@
       "Bash(do echo \"=== $file ===\")",
       "Bash(head:*)",
       "Bash(done)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Read(D:\\git\\checkmate-main\\app/**)",
+      "Read(D:\\git\\checkmate-main\\components/**)",
+      "Read(D:\\git\\checkmate-main\\components/**)",
+      "Bash(ls:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [],
+    "additionalDirectories": [
+      "D:\\git\\checkmate-main"
+    ]
   }
 }
