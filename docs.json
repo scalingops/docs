@@ -165,14 +165,9 @@
               "features/ai-compliance-notes",
               "features/ai-text-improvement",
               "features/calendar",
-              "features/compliance-scheduling",
               "features/import-export",
-              "features/mobile-drag-drop-reporting",
-              "features/multi-factor-authentication",
               "features/report-builder-module-availability",
-              "features/survey-email-templates",
-              "features/unified-compliance-settings",
-              "features/user-settings-enhancements"
+              "features/unified-compliance-settings"
             ]
           }
         ]
