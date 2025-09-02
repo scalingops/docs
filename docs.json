@@ -105,7 +105,10 @@
               },
               {
                 "group": "Integrations",
-                "pages": ["user-guides/integrations/index"]
+                "pages": [
+                  "user-guides/integrations/index",
+                  "user-guides/integrations/enable-connectwise-integration"
+                ]
               },
               {
                 "group": "Admin",
