@@ -9,6 +9,8 @@
 - Format: MDX files with YAML frontmatter
 - Config: docs.json for navigation, theme, settings
 - Components: Mintlify components
+- Audience: End users of MSPortal.ai application (NOT developers)
+- Focus: How to use the app, configuration, getting value from features
 
 ## Content strategy
 - Document just enough for user success - not too much, not too little
@@ -44,3 +46,5 @@
 - Use absolute URLs for internal links
 - Include untested code examples
 - Make assumptions - always ask for clarification
+- Include developer-focused content (APIs, code architecture, technical implementation)
+- Document features that don't exist or aren't available to users
