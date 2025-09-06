@@ -220,6 +220,10 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "announcement": {
+    "text": "📚 Documentation is currently Work in Progress and may be incomplete or incorrect.",
+    "type": "warning"
+  },
   "navbar": {
     "links": [
       {
