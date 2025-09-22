@@ -1,4 +1,4 @@
-# Syncro Integration Setup Guide
+# Enable Syncro Integration
 
 ## Overview
 This guide will walk you through the process of configuring the Syncro integration with MSPortal. The integration requires an API key from your Syncro account with specific permissions.
