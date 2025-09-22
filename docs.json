@@ -20,7 +20,7 @@
               "user-guides/getting-started/quick-start",
               "user-guides/getting-started/keyboard-shortcuts",
               "user-guides/getting-started/Onboarding-checklist",
-              "user-guides/getting-started/How to Create a New User Role"
+              "user-guides/getting-started/how-to-create-a-new-user-role"
             ]
           },
           {
@@ -96,7 +96,7 @@
                 "group": "Ticketing",
                 "pages": [
                   "user-guides/ticketing/index",
-                  "user-guides/ticketing/how to create a ticket template",
+                  "user-guides/ticketing/how-to-create-a-ticket-template",
                   "user-guides/ticketing/open-a-ticket-with-ai"
                 ]
               },
@@ -104,7 +104,7 @@
                 "group": "Compliance",
                 "pages": [
                   "user-guides/compliance/index",
-                  "user-guides/compliance/Adding CIS Benchmarks"
+                  "user-guides/compliance/adding-cis-benchmarks"
                 ]
               },
               {
@@ -136,7 +136,7 @@
                   "user-guides/integrations/index",
                   "user-guides/integrations/import-users",
                   "user-guides/integrations/import-companies",
-                  "user-guides/integrations/Clear and Resync Integrations",
+                  "user-guides/integrations/clear-and-resync-integrations",
                   {
                     "group": "ConnectWise",
                     "pages": [
