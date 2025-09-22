@@ -1,15 +1,15 @@
 # Syncro Integration Setup Guide
 
 ## Overview
-This guide will walk you through the process of configuring the Syncro integration with MS Portal. The integration requires an API key from your Syncro account with specific permissions.
+This guide will walk you through the process of configuring the Syncro integration with MSPortal. The integration requires an API key from your Syncro account with specific permissions.
 
 ## Prerequisites
 - Active Syncro account with administrative access
-- MS Portal account with integration permissions
+- MSPortal account with integration permissions
 
 ## Configuration Steps
 
-### Step 1: Access MS Portal Integration Settings
+### Step 1: Access MSPortal Integration Settings
 Navigate to [https://msportal.ai/settings/integrations](https://msportal.ai/settings/integrations) and click the gear icon next to the Syncro integration.
 
 ![](https://colony-recorder.s3.amazonaws.com/files/2025-09-19/58747858-5f04-43b9-b089-b3c43493b9bb/stack_animation.webp)
@@ -35,7 +35,7 @@ Choose "Custom Permissions" to configure specific access rights for the integrat
 ![](https://ajeuwbhvhr.cloudimg.io/https://colony-recorder.s3.amazonaws.com/files/2025-09-19/321f7b41-dfe9-4f7f-bddc-e447b979df4f/ascreenshot.jpeg?tl_px=0,0&br_px=1719,961&force_format=jpeg&q=100&width=1120.0&wat=1&wat_opacity=0.7&wat_gravity=northwest&wat_url=https://colony-recorder.s3.us-west-1.amazonaws.com/images/watermarks/FB923C_standard.png&wat_pad=254,247)
 
 ### Step 6: Configure Token Settings
-1. **Name**: Enter a descriptive name for your token (e.g., "MS Portal Integration")
+1. **Name**: Enter a descriptive name for your token (e.g., "MSPortal Integration")
 2. **Expiration**: Set the expiration date to at least one year in the future
 3. **Permissions**: Select all permissions from the list below
 
@@ -95,9 +95,9 @@ Select the following permissions for the API token:
 
 ## Step 7: Complete Integration Setup
 
-### Add Token to MS Portal
+### Add Token to MSPortal
 1. Copy the generated API token from Syncro
-2. Return to MS Portal integration settings
+2. Return to MSPortal integration settings
 3. Paste the token into the API key field
 4. Enter your Syncro domain name
 5. Click "Save" to activate the integration
