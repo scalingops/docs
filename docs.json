@@ -19,7 +19,10 @@
               "user-guides/getting-started/index",
               "user-guides/getting-started/quick-start",
               "user-guides/getting-started/keyboard-shortcuts",
-              "user-guides/getting-started/Onboarding-checklist"
+              "user-guides/getting-started/Onboarding-checklist",
+              "user-guides/getting-started/How to Create a New User Role",
+              "user-guides/getting-started/importing-users",
+              "user-guides/getting-started/import-companies"
             ]
           },
           {
@@ -29,7 +32,8 @@
                 "group": "Training Resources",
                 "pages": [
                   "user-guides/training/index",
-                  "user-guides/training/how-to-enable-training"
+                  "user-guides/training/how-to-enable-training",
+                  "user-guides/training/enabling-training"
                 ]
               }
             ]
@@ -39,23 +43,34 @@
             "pages": [
               {
                 "group": "Company Overview",
-                "pages": ["user-guides/company-overview/index", "user-guides/company-overview/audit"]
+                "pages": [
+                  "user-guides/company-overview/index",
+                  "user-guides/company-overview/audit"
+                ]
               },
               {
                 "group": "Surveys",
-                "pages": ["user-guides/surveys/index"]
+                "pages": [
+                  "user-guides/surveys/index"
+                ]
               },
               {
                 "group": "Goals",
-                "pages": ["user-guides/goals/index"]
+                "pages": [
+                  "user-guides/goals/index"
+                ]
               },
               {
                 "group": "Planner",
-                "pages": ["user-guides/planner/index"]
+                "pages": [
+                  "user-guides/planner/index"
+                ]
               },
               {
                 "group": "Budgets",
-                "pages": ["user-guides/budgets/index"]
+                "pages": [
+                  "user-guides/budgets/index"
+                ]
               }
             ]
           },
@@ -64,7 +79,9 @@
             "pages": [
               {
                 "group": "Calendar",
-                "pages": ["user-guides/calendar/index"]
+                "pages": [
+                  "user-guides/calendar/index"
+                ]
               }
             ]
           },
@@ -73,11 +90,17 @@
             "pages": [
               {
                 "group": "Microsoft 365",
-                "pages": ["user-guides/microsoft-365/index"]
+                "pages": [
+                  "user-guides/microsoft-365/index"
+                ]
               },
               {
                 "group": "Ticketing",
-                "pages": ["user-guides/ticketing/index"]
+                "pages": [
+                  "user-guides/ticketing/index",
+                  "user-guides/ticketing/how to create a ticket template",
+                  "user-guides/ticketing/open-a-ticket-with-ai"
+                ]
               },
               {
                 "group": "Compliance",
@@ -88,11 +111,15 @@
               },
               {
                 "group": "Devices",
-                "pages": ["user-guides/devices/index"]
+                "pages": [
+                  "user-guides/devices/index"
+                ]
               },
               {
                 "group": "Reporting",
-                "pages": ["user-guides/reporting/index"]
+                "pages": [
+                  "user-guides/reporting/index"
+                ]
               }
             ]
           },
@@ -101,19 +128,27 @@
             "pages": [
               {
                 "group": "Settings",
-                "pages": ["user-guides/settings/index"]
+                "pages": [
+                  "user-guides/settings/index"
+                ]
               },
               {
                 "group": "Integrations",
                 "pages": [
                   "user-guides/integrations/index",
                   "user-guides/integrations/enable-connectwise-integration",
-                  "user-guides/integrations/syncro-configuration"
+                  "user-guides/integrations/connectwise-configure-and-service-desk",
+                  "user-guides/integrations/connectwise-opportunity-settings",
+                  "user-guides/integrations/connectwise-resync-psa-settings",
+                  "user-guides/integrations/syncro-configuration",
+                  "user-guides/integrations/Clear and Resync Integrations"
                 ]
               },
               {
                 "group": "Admin",
-                "pages": ["user-guides/admin/index"]
+                "pages": [
+                  "user-guides/admin/index"
+                ]
               }
             ]
           }
@@ -222,7 +257,7 @@
     "dark": "/logo/dark.svg"
   },
   "announcement": {
-    "text": "📚 Documentation is currently Work in Progress and may be incomplete or incorrect.",
+    "text": "\u00f0\u0178\u201c\u0161 Documentation is currently Work in Progress and may be incomplete or incorrect.",
     "type": "warning"
   },
   "navbar": {
