@@ -11,6 +11,17 @@
   "navigation": {
     "tabs": [
       {
+        "tab": "Release Notes",
+        "groups": [
+          {
+            "group": "Updates",
+            "pages": [
+              "release-notes/index"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "User Guides",
         "groups": [
           {
@@ -204,42 +215,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Features",
-        "groups": [
-          {
-            "group": "Feature Documentation",
-            "pages": [
-              "features/ai-compliance-notes",
-              "features/ai-text-improvement",
-              "features/calendar",
-              "features/import-export",
-              "features/report-builder-module-availability",
-              "features/unified-compliance-settings"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoints",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
       }
     ],
     "global": {
@@ -273,6 +248,10 @@
   "navbar": {
     "links": [
       {
+        "label": "Release Notes",
+        "href": "/release-notes"
+      },
+      {
         "label": "Support",
         "href": "mailto:support@msportal.ai"
       }
@@ -285,9 +264,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/msportalai",
-      "github": "https://github.com/msportalai",
-      "linkedin": "https://linkedin.com/company/msportalai"
+      "linkedin": "https://linkedin.com/company/msportal"
     }
   }
 }
