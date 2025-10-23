@@ -3,6 +3,198 @@ title: "Release Notes"
 description: "Product updates, improvements, and upcoming features for MSPortal.ai"
 ---
 
+## October 24, 2025
+
+### External Resources Module
+
+Embed and manage external applications directly within MSPortal.ai, providing your clients with seamless access to third-party tools without leaving the platform.
+
+**Key Features:**
+- **Iframe Embedding**: Display external applications in secure iframes with frame policy validation
+- **Role-Based Access**: Control which user roles can access each external resource
+- **Per-Company URL Overrides**: Different companies can access different instances of the same resource (e.g., separate Bitwarden vaults)
+- **Bulk Operations**: Manage multiple external resources at once - delete, disable, or update permissions in bulk
+- **Frame Policy Testing**: Automatically verify if external URLs support iframe embedding before deployment
+- **Company-Specific URLs**: Override the default URL for specific companies while maintaining the same resource configuration
+
+<img
+  src="/images/screenshots/External/External Resources Management.png"
+  alt="External Resources management interface with bulk actions"
+  height="400"
+  className="rounded-lg"
+/>
+
+**How It Works:**
+1. Navigate to Settings → External Resources
+2. Create a new external resource with a name, URL, and icon
+3. Assign roles that should have access
+4. Optionally configure company-specific URL overrides for multi-instance tools
+5. The resource appears in the main navigation for authorized users
+
+**Common Use Cases:**
+- Password managers (Bitwarden, 1Password, LastPass)
+- Documentation wikis (Confluence, Notion, IT Glue)
+- Monitoring dashboards (Grafana, Datadog, PRTG)
+- Client-specific portals and SaaS tools
+
+---
+
+### Meeting Summary Email Workflow
+
+Transform your meeting notes into professional email summaries with AI assistance and send them directly to participants.
+
+**Key Features:**
+- **AI-Generated Summaries**: Automatically generate meeting summaries from your agenda items, notes, and action items
+- **Smart Recipient Management**: Pre-populated with meeting participants, easily add/remove recipients
+- **Rich Text Editing**: Full rich-text editor with formatting, lists, and styling options
+- **Preview & Edit**: Review and customize the AI-generated content before sending
+- **Integrated with M365**: Sends via your configured Microsoft 365 integration for proper email threading
+- **Action Item Tracking**: Automatically includes action items and next steps from the meeting
+
+<img
+  src="/images/screenshots/Meetings/Meeting Summary Email.png"
+  alt="Meeting summary email workflow with AI generation"
+  height="400"
+  className="rounded-lg"
+/>
+
+**Workflow:**
+1. After completing a meeting, click "Send Summary"
+2. AI generates a professional summary including key discussion points and action items
+3. Review participants and add additional recipients if needed
+4. Edit the summary content using the rich text editor
+5. Send directly from MSPortal.ai - appears in your Sent Items folder
+
+---
+
+### ConnectWise Configuration Import
+
+Import and map device configurations from ConnectWise Manage to streamline device tracking and warranty management.
+
+**Key Features:**
+- **Configuration Type Mapping**: View all configuration types from ConnectWise and map them to MSPortal.ai device types
+- **Visual Mapping Interface**: Clear UI showing ConnectWise types on the left, MSPortal.ai device types on the right
+- **Bulk Import Preview**: See exactly what will be imported before committing changes
+- **Staged Import Process**: Map configurations in stages, allowing you to organize complex device inventories
+- **Smart Defaults**: Common configuration types (Server, Workstation, Laptop) are auto-mapped when possible
+- **Integration Status Tracking**: Real-time feedback on import progress and completion status
+
+<img
+  src="/images/screenshots/Integrations/ConnectWise Configuration Import.png"
+  alt="ConnectWise configuration import mapping interface"
+  height="400"
+  className="rounded-lg"
+/>
+
+**How to Use:**
+1. Navigate to Settings → Integrations → ConnectWise
+2. Click "Import Configurations" to view unmapped configuration types
+3. For each ConnectWise configuration type, select the corresponding MSPortal.ai device type
+4. Review the import preview showing how many devices will be created
+5. Click "Import" to complete the mapping
+
+---
+
+### Compliance Bulk Generation Improvements
+
+Significantly enhanced the bulk compliance check generation system with better reliability, progress tracking, and error recovery.
+
+**Key Improvements:**
+- **Streamed Generation**: Real-time progress updates as compliance checks are created, no more waiting for the entire batch to complete
+- **Live Progress Indicators**: Visual progress bar and status updates showing exactly which check is being generated
+- **Automatic Retry Logic**: Failed generations are automatically retried up to 3 times before being marked as failed
+- **Pending Review Workflow**: Generated checks are marked as "pending-review" and can be bulk-approved after review
+- **Bulk Approval Dialog**: Review and approve multiple generated checks at once with a streamlined interface
+- **Enhanced Error Handling**: Clear error messages and recovery options when generation fails
+- **Token Optimization**: Smarter AI model selection to stay within token limits while maintaining quality
+
+<img
+  src="/images/screenshots/Compliance/Bulk Generation Progress.png"
+  alt="Bulk compliance generation with live progress tracking"
+  height="400"
+  className="rounded-lg"
+/>
+
+**New Workflow:**
+1. Navigate to Settings → Compliance → Checks
+2. Click "Bulk Generate with AI"
+3. Enter your requirements (e.g., "NIST 800-171 controls for healthcare")
+4. Watch real-time progress as checks are generated
+5. Review the "Pending Review" banner showing how many checks need approval
+6. Click "Review Pending Checks" to bulk approve or edit generated checks
+
+---
+
+### Security Enhancements
+
+**CSRF Protection**:
+- All external resource server actions now validate CSRF tokens
+- All training-related actions protected against cross-site request forgery
+- Home page statistics actions secured with CSRF validation
+- Significantly improved security posture for state-changing operations
+
+**Database Security**:
+- Migrated external resources to regular views with `security_invoker=true` for proper RLS enforcement
+- Fixed role filtering to prevent unauthorized access across tenants
+- Enhanced RLS policies on external resource tables
+- Improved foreign key constraints and database integrity
+
+---
+
+### Performance & Architecture Improvements
+
+**Compliance System**:
+- Optimized compliance history queries with better indexing
+- Streamlined token usage in AI generation (up to 50% reduction)
+- Improved autosave reliability in compliance check editor
+- Better caching strategies for frequently-accessed compliance data
+
+**AI Infrastructure Refactor**:
+- Consolidated AI providers into centralized factory pattern (`lib/ai/factory.ts`)
+- New provider abstraction layer supporting Anthropic, OpenAI, and other LLMs
+- Improved token counting and limit enforcement
+- Better HTML sanitization and text extraction utilities
+- Enhanced streaming support for real-time AI responses
+
+**Database Views**:
+- New regular view `v_external_items_with_roles` replaces complex queries
+- Better performance with pre-joined role and permission data
+- Indexed views for faster queries across large datasets
+- Reduced query complexity in external resources module
+
+---
+
+### Bug Fixes & Quality Improvements
+
+- Fixed compliance dialog autosave to reliably save changes without data loss
+- Improved planner template management with better bulk operations
+- Enhanced text editor extensions with better formatting support
+- Fixed calendar meeting agenda view layout and styling
+- Improved device warranty timeline block data handling
+- Better error handling in ConnectWise ticket sync
+- Fixed presentation layout styling for meeting slides
+- Removed debug console logs from production code
+- Updated dependencies for security and stability
+
+---
+
+### Developer Experience
+
+- Refactored AI prompt management into centralized `lib/ai/prompts/` directory
+- New streaming utilities for AI responses (`lib/ai/stream.ts`)
+- Improved logging infrastructure with structured log levels
+- Better TypeScript types for meetings and AI operations
+- Enhanced middleware for CSRF protection and CSP headers
+- New edge functions for external resource frame policy checking
+
+---
+
+### Breaking Changes
+
+⚠️ **External Groups Removed**: The external groups feature has been completely removed in favor of simpler role-based permissions. Any existing group assignments will be lost during the migration. External resources are now controlled entirely by role assignments.
+
+---
+
 ## Coming Soon
 
 - **Meeting summaries with action items**: Receive concise summaries of meetings with clear next steps automatically captured for you.
