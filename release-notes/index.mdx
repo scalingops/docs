@@ -125,22 +125,6 @@ Significantly enhanced the bulk compliance check generation system with better r
 
 ---
 
-### Security Enhancements
-
-**CSRF Protection**:
-- All external resource server actions now validate CSRF tokens
-- All training-related actions protected against cross-site request forgery
-- Home page statistics actions secured with CSRF validation
-- Significantly improved security posture for state-changing operations
-
-**Database Security**:
-- Migrated external resources to regular views with `security_invoker=true` for proper RLS enforcement
-- Fixed role filtering to prevent unauthorized access across tenants
-- Enhanced RLS policies on external resource tables
-- Improved foreign key constraints and database integrity
-
----
-
 ### Performance & Architecture Improvements
 
 **Compliance System**:
