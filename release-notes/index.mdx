@@ -3,6 +3,124 @@ title: "Release Notes"
 description: "Product updates, improvements, and upcoming features for MSPortal.ai"
 ---
 
+## October 31, 2025
+
+### Major Performance Enhancements
+
+We've implemented significant performance optimizations across the platform to improve speed and responsiveness, especially for large datasets.
+
+**Improved Speed:**
+- Database Optimization
+- Smart Caching
+- Infinite Scroll
+- Enhanced Query Performance
+
+**Pages with Performance Improvements:**
+- Compliance checks list now loads 3-5x faster
+- Tickets page handles thousands of tickets smoothly
+- Devices page loads instantly
+- Goals and Training pages with improved performance
+
+---
+
+### Surveys Module Enhancements
+
+Comprehensive improvements to survey response management with better visualization and bulk operations.
+
+**Key Features:**
+- **Bulk Response Management**: Select multiple responses, apply filters, and perform actions on entire groups
+  - New bulk action toolbar with keyboard shortcuts support
+  - Multi-select with shift+click and ctrl+click
+  - Bulk delete, export, or categorize responses
+- **Enhanced Question Cards**: Improved visualization with sentiment analysis badges and mini-bar charts
+  - Sentiment indicators (Positive, Neutral, Negative) with color coding
+  - Quick visual feedback on response distribution
+  - Better handling of text responses vs. choice responses
+- **Response Drawer**: Side panel for viewing full response details without leaving the page
+- **Smart Filtering**: Filter by date range, response type, sentiment, and more
+- **Loading States**: Skeleton screens for better perceived performance
+- **Empty States**: Helpful guidance when no data is available
+
+<img
+  src="/images/screenshots/Surveys/Survey Responses.png"
+  alt="Survey response management with bulk operations"
+  height="400"
+  className="rounded-lg"
+/>
+
+**Workflow Improvements:**
+1. Navigate to any survey and view the Responses tab
+2. Use the filter bar to narrow down responses by criteria
+3. Select multiple responses using checkboxes or keyboard shortcuts
+4. Apply bulk actions or view individual response details in the drawer
+
+---
+
+### Compliance Module Optimizations
+
+Significant performance and UX improvements to the compliance system.
+
+**Key Improvements:**
+- Instant page transitions even with thousands of compliance checks
+- Smooth infinite scroll experience
+- Added notes count and file count to compliance check listings for better visibility
+- Faster filtering and search across compliance checks
+
+---
+
+### Security Enhancements
+
+- Enhanced security enforcement across all database operations
+- Improved protection for external-facing actions
+- Better permission validation throughout the platform
+- Enhanced impersonation security controls
+
+---
+
+### Bug Fixes & Quality Improvements
+
+**Compliance:**
+- Fixed autosave reliability in compliance check editor to prevent data loss
+- Improved dialog interactions for better user experience
+- Enhanced permission checking for multi-company environments
+
+**Meetings:**
+- Optimized agenda item delete operations for faster performance
+- Better handling of meeting attachments and external links
+
+**Planner:**
+- Improved bulk operations for planner templates
+- Enhanced selection dialog with better UX and keyboard navigation
+
+**Tickets:**
+- Optimized ticket category and display group management
+- Better PSA settings synchronization
+- Improved Autotask ticket details panel rendering
+
+**User Management:**
+- Streamlined permission queries for faster role management
+- Better content loading in user settings pages
+- Enhanced role assignment workflow
+
+---
+
+### Reporting Enhancements
+
+**New Reporting Blocks:**
+- Enhanced ticket analytics blocks with better visualization
+- Improved M365 Secure Score reporting blocks
+- Training enrollment and progress tracking blocks
+- Budget detail blocks with expanded metrics
+- Device warranty timeline blocks
+
+**Improvements:**
+- Better data visualization across all block types
+- Faster block rendering and data loading
+- Enhanced customization options for reports
+- Improved PDF export quality
+
+---
+
 ## October 24, 2025
 
 ### External Resources Module
