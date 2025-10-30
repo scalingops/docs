@@ -150,10 +150,10 @@ Embed and manage external applications directly within MSPortal.ai, providing yo
 5. The resource appears in the main navigation for authorized users
 
 **Common Use Cases:**
-- Password managers (Bitwarden, 1Password, LastPass)
-- Documentation wikis (Confluence, Notion, IT Glue)
-- Monitoring dashboards (Grafana, Datadog, PRTG)
-- Client-specific portals and SaaS tools
+- **Automation Forms**: Rewst Forms, Pia Forms - Embed intake forms directly in the portal
+- **Dashboards**: BrightGauge, MSPBots - Display metrics and KPIs for clients
+- **Documentation Wikis**: ITGlue (MyGlue), Hudu, Confluence - Seamless access to documentation
+- **Custom Apps**: Any client-specific portals and internal SaaS tools
 
 ---
 
@@ -197,13 +197,6 @@ Import and map device configurations from ConnectWise Manage to streamline devic
 - **Smart Defaults**: Common configuration types (Server, Workstation, Laptop) are auto-mapped when possible
 - **Integration Status Tracking**: Real-time feedback on import progress and completion status
 
-<img
-  src="/images/screenshots/Integrations/ConnectWise Configuration Import.png"
-  alt="ConnectWise configuration import mapping interface"
-  height="400"
-  className="rounded-lg"
-/>
-
 **How to Use:**
 1. Navigate to Settings → Integrations → ConnectWise
 2. Click "Import Configurations" to view unmapped configuration types
@@ -226,13 +219,6 @@ Significantly enhanced the bulk compliance check generation system with better r
 - **Enhanced Error Handling**: Clear error messages and recovery options when generation fails
 - **Token Optimization**: Smarter AI model selection to stay within token limits while maintaining quality
 
-<img
-  src="/images/screenshots/Compliance/Bulk Generation Progress.png"
-  alt="Bulk compliance generation with live progress tracking"
-  height="400"
-  className="rounded-lg"
-/>
-
 **New Workflow:**
 1. Navigate to Settings → Compliance → Checks
 2. Click "Bulk Generate with AI"
@@ -252,18 +238,9 @@ Significantly enhanced the bulk compliance check generation system with better r
 - Better caching strategies for frequently-accessed compliance data
 
 **AI Infrastructure Refactor**:
-- Consolidated AI providers into centralized factory pattern (`lib/ai/factory.ts`)
 - New provider abstraction layer supporting Anthropic, OpenAI, and other LLMs
 - Improved token counting and limit enforcement
-- Better HTML sanitization and text extraction utilities
 - Enhanced streaming support for real-time AI responses
-
-**Database Views**:
-- New regular view `v_external_items_with_roles` replaces complex queries
-- Better performance with pre-joined role and permission data
-- Indexed views for faster queries across large datasets
-- Reduced query complexity in external resources module
-
 ---
 
 ### Bug Fixes & Quality Improvements
@@ -275,25 +252,7 @@ Significantly enhanced the bulk compliance check generation system with better r
 - Improved device warranty timeline block data handling
 - Better error handling in ConnectWise ticket sync
 - Fixed presentation layout styling for meeting slides
-- Removed debug console logs from production code
 - Updated dependencies for security and stability
-
----
-
-### Developer Experience
-
-- Refactored AI prompt management into centralized `lib/ai/prompts/` directory
-- New streaming utilities for AI responses (`lib/ai/stream.ts`)
-- Improved logging infrastructure with structured log levels
-- Better TypeScript types for meetings and AI operations
-- Enhanced middleware for CSRF protection and CSP headers
-- New edge functions for external resource frame policy checking
-
----
-
-### Breaking Changes
-
-⚠️ **External Groups Removed**: The external groups feature has been completely removed in favor of simpler role-based permissions. Any existing group assignments will be lost during the migration. External resources are now controlled entirely by role assignments.
 
 ---
 
