@@ -3,6 +3,186 @@ title: "Release Notes"
 description: "Product updates, improvements, and upcoming features for MSPortal.ai"
 ---
 
+## November 7, 2025
+
+### Custom Fields System
+
+A comprehensive custom fields system that allows you to extend data collection across multiple entity types, providing flexible tracking and organization capabilities.
+
+**Key Features:**
+- **Multi-Entity Support**: Create custom fields for Devices, Compliance Checks, Goals, Budgets, Planner Items, Users, and Companies
+- **20+ Field Types**: Support for text, numbers, dates, checkboxes, selects, multi-selects, radio buttons, email, phone, URL, and more
+- **User Scope Filtering**: User custom fields can be scoped to tenant-wide, company-specific, or both
+- **Bulk Operations**: Edit custom field values for multiple users or entities at once
+- **Inline Options Editing**: Manage select/multi-select/radio field options directly in the settings interface
+
+**Field Types Supported:**
+- Text: Short text, long text
+- Numeric: Number, decimal
+- Date/Time: Date, datetime
+- Contact: Email, phone, URL
+- Boolean: Checkbox
+- Selection: Select, multi-select, radio
+- Special: Priority, impact, urgency
+
+**How to Use:**
+1. Navigate to Settings → Custom Fields
+2. Select the entity type tab (Devices, Compliance, Goals, etc.)
+3. Create new fields with labels and types
+4. Custom fields automatically appear in edit dialogs for the corresponding entity types
+5. For users, choose whether fields apply to tenant users, company users, or both
+
+**Company & User Management:**
+- Bulk edit custom fields for multiple company users at once
+- Tenant and company-scoped custom fields for users
+- Custom fields support in company editing interface
+
+---
+
+### Training Certificates & LinkedIn Sharing
+
+Generate professional training certificates automatically upon course or learning path completion, with built-in LinkedIn sharing capabilities.
+
+**Key Features:**
+- **Automatic Certificate Generation**: Certificates are automatically created when users complete courses or learning paths
+- **Bulk Certificate Generation**: Generate certificates for multiple users at once from the enrollments page
+- **LinkedIn Integration**: Share certificates directly to LinkedIn
+- **Certificate Preview**: Preview certificates before downloading or sharing
+- **Download & Share**: Download certificates as PNG images or share via LinkedIn
+- **Tenant Branding**: Certificates include your tenant logo for professional branding
+- **Public Certificate Access**: Certificates can be accessed via public URLs for sharing outside the platform
+
+**Certificate Features:**
+- Professional design with course/learning path name, completion date, and user name
+- Tenant logo for branded certificates
+- Social sharing buttons for LinkedIn
+- Certificate viewer with download and share options
+
+**How to Use:**
+1. Complete a training course or learning path
+2. Certificate is automatically generated
+3. View certificate from the Training → Certificates page or enrollment details
+4. Click "Share to LinkedIn" to authenticate and post
+5. Or download the certificate as a PNG image
+
+---
+
+### Learning Path Progress Tracking & Reporting
+
+Comprehensive progress tracking and reporting for learning paths, giving you visibility into user completion rates, time spent, and performance metrics.
+
+**Key Features:**
+- **Progress Tracking**: Real-time tracking of user progress through learning paths
+- **Progress Sheets**: Detailed progress view showing individual user completion status for each course in a learning path
+- **Progress Table**: Filterable table showing all users' progress across learning paths
+- **Time Tracking**: Track time spent on courses and learning paths
+- **Average Scores**: Calculate and display average quiz scores per learning path
+- **Completion Status**: Visual indicators for completed, in-progress, and not-started courses
+- **Bulk Progress View**: View progress for multiple users at once
+
+**Reporting Capabilities:**
+- Learning path completion rates
+- User progress summaries
+- Time spent per course and learning path
+- Quiz scores and pass/fail rates
+- Enrollment status tracking
+- Progress filtering by user, company, or learning path
+
+**How to Use:**
+1. Navigate to Training → Learning Paths
+2. Select a learning path to view progress
+3. Click "View Progress" to see detailed progress sheet
+4. Use the progress table to filter and view progress across all learning paths
+5. Export progress data for reporting purposes
+
+---
+
+### Training Quiz System
+
+A complete quiz system integrated into training courses, allowing you to assess user knowledge and track quiz performance.
+
+**Key Features:**
+- **Multiple Choice Questions**: Create questions with multiple answer options
+- **Answer Tracking**: Track correct and incorrect answers per question
+- **Quiz Attempts**: Users can take quizzes multiple times with attempt history
+- **Score Calculation**: Automatic score calculation and pass/fail determination
+- **Question Management**: Add, edit, and reorder questions within courses
+- **Answer Options**: Configure multiple answer choices with correct answer designation
+- **Attempt History**: View all quiz attempts per user per course
+
+**Quiz Features:**
+- Question creation and editing interface
+- Answer option management
+- Question reordering within courses
+- Score tracking and pass/fail status
+- Attempt history per user
+
+**How to Use:**
+1. Navigate to a training course
+2. Click "Questions" tab to manage quiz questions
+3. Add questions with multiple choice answers
+4. Mark the correct answer for each question
+5. Users will see quizzes when taking courses
+6. Quiz scores are tracked and displayed in progress reports
+
+---
+
+### Company-Scoped Training Courses
+
+Enable training courses at the company level, allowing you to provide company-specific training content while maintaining tenant-wide course libraries.
+
+**Key Features:**
+- **Per-Company Courses**: Enable courses for specific companies only
+- **Tenant-Wide Courses**: Continue to support tenant-wide course enablement
+- **Dual Scoping**: Mix tenant-wide and company-specific courses in your training library
+- **Company Filtering**: Filter courses by company scope in the training manager
+- **Flexible Enrollment**: Enroll users in company-specific or tenant-wide courses
+
+**How It Works:**
+- When enabling a course, choose "Tenant-wide" or select specific companies
+- Company-scoped courses only appear for users in those companies
+- Tenant-wide courses appear for all users
+- Course enablement interface supports both scoping options
+
+---
+
+### Training Email Reminders
+
+Automated email reminder system for training enrollments, helping ensure users complete their assigned training.
+
+**Key Features:**
+- **Individual Reminders**: Send training reminders to individual users
+- **Bulk Reminders**: Send reminders to multiple users at once from the enrollments page
+- **Customizable Templates**: Email templates with course information and direct links
+- **Reminder Management**: Track and manage training reminder emails
+
+**Email Features:**
+- Professional email templates
+- Course information and links
+- User-friendly reminder content
+- Bulk sending capabilities
+
+**How to Use:**
+1. Navigate to Training → Enrollments
+2. Select one or more enrollments
+3. Click "Send Reminders" from the bulk actions menu
+4. Emails are sent automatically with course details and links
+
+---
+
+### Enhanced Training Enrollment Management
+
+Improved enrollment management with bulk actions and enhanced filtering capabilities.
+
+**Key Features:**
+- **Bulk Actions**: Select multiple enrollments and perform actions in bulk
+- **Bulk Reminders**: Send training reminders to multiple users at once
+- **Bulk Certificate Generation**: Generate certificates for multiple completed enrollments
+- **Enhanced Filtering**: Filter enrollments by status, course, user, company, and more
+- **Improved Sorting**: Better sorting options for enrollment lists
+
+---
+
 ## October 31, 2025
 
 ### Major Performance Enhancements
@@ -10,10 +190,9 @@ description: "Product updates, improvements, and upcoming features for MSPortal.
 We've implemented significant performance optimizations across the platform to improve speed and responsiveness, especially for large datasets.
 
 **Improved Speed:**
-- Database Optimization
-- Smart Caching
-- Infinite Scroll
-- Enhanced Query Performance
+- Faster page loading across all modules
+- Smooth scrolling for large lists
+- Instant search and filtering
 
 **Pages with Performance Improvements:**
 - Compliance checks list now loads 3-5x faster
@@ -29,8 +208,8 @@ Comprehensive improvements to survey response management with better visualizati
 
 **Key Features:**
 - **Bulk Response Management**: Select multiple responses, apply filters, and perform actions on entire groups
-  - New bulk action toolbar with keyboard shortcuts support
-  - Multi-select with shift+click and ctrl+click
+  - New bulk action toolbar with keyboard shortcuts
+  - Multi-select with checkboxes
   - Bulk delete, export, or categorize responses
 - **Enhanced Question Cards**: Improved visualization with sentiment analysis badges and mini-bar charts
   - Sentiment indicators (Positive, Neutral, Negative) with color coding
@@ -38,7 +217,6 @@ Comprehensive improvements to survey response management with better visualizati
   - Better handling of text responses vs. choice responses
 - **Response Drawer**: Side panel for viewing full response details without leaving the page
 - **Smart Filtering**: Filter by date range, response type, sentiment, and more
-- **Loading States**: Skeleton screens for better perceived performance
 - **Empty States**: Helpful guidance when no data is available
 
 <img
@@ -68,15 +246,6 @@ Significant performance and UX improvements to the compliance system.
 
 ---
 
-### Security Enhancements
-
-- Enhanced security enforcement across all database operations
-- Improved protection for external-facing actions
-- Better permission validation throughout the platform
-- Enhanced impersonation security controls
-
----
-
 ### Bug Fixes & Quality Improvements
 
 **Compliance:**
@@ -98,7 +267,7 @@ Significant performance and UX improvements to the compliance system.
 - Improved Autotask ticket details panel rendering
 
 **User Management:**
-- Streamlined permission queries for faster role management
+- Faster role management
 - Better content loading in user settings pages
 - Enhanced role assignment workflow
 
@@ -115,7 +284,7 @@ Significant performance and UX improvements to the compliance system.
 
 **Improvements:**
 - Better data visualization across all block types
-- Faster block rendering and data loading
+- Faster report loading
 - Enhanced customization options for reports
 - Improved PDF export quality
 
@@ -128,11 +297,10 @@ Significant performance and UX improvements to the compliance system.
 Embed and manage external applications directly within MSPortal.ai, providing your clients with seamless access to third-party tools without leaving the platform.
 
 **Key Features:**
-- **Iframe Embedding**: Display external applications in secure iframes with frame policy validation
+- **Embed External Applications**: Display external applications directly within the platform
 - **Role-Based Access**: Control which user roles can access each external resource
 - **Per-Company URL Overrides**: Different companies can access different instances of the same resource (e.g., separate Bitwarden vaults)
 - **Bulk Operations**: Manage multiple external resources at once - delete, disable, or update permissions in bulk
-- **Frame Policy Testing**: Automatically verify if external URLs support iframe embedding before deployment
 - **Company-Specific URLs**: Override the default URL for specific companies while maintaining the same resource configuration
 
 <img
@@ -166,7 +334,7 @@ Transform your meeting notes into professional email summaries with AI assistanc
 - **Smart Recipient Management**: Pre-populated with meeting participants, easily add/remove recipients
 - **Rich Text Editing**: Full rich-text editor with formatting, lists, and styling options
 - **Preview & Edit**: Review and customize the AI-generated content before sending
-- **Integrated with M365**: Sends via your configured Microsoft 365 integration for proper email threading
+- **Integrated with M365**: Sends via your configured Microsoft 365 integration
 - **Action Item Tracking**: Automatically includes action items and next steps from the meeting
 
 <img
@@ -211,13 +379,12 @@ Import and map device configurations from ConnectWise Manage to streamline devic
 Significantly enhanced the bulk compliance check generation system with better reliability, progress tracking, and error recovery.
 
 **Key Improvements:**
-- **Streamed Generation**: Real-time progress updates as compliance checks are created, no more waiting for the entire batch to complete
-- **Live Progress Indicators**: Visual progress bar and status updates showing exactly which check is being generated
-- **Automatic Retry Logic**: Failed generations are automatically retried up to 3 times before being marked as failed
+- **Real-Time Progress**: See progress updates as compliance checks are created
+- **Live Progress Indicators**: Visual progress bar showing which check is being generated
+- **Automatic Retry**: Failed generations are automatically retried before being marked as failed
 - **Pending Review Workflow**: Generated checks are marked as "pending-review" and can be bulk-approved after review
 - **Bulk Approval Dialog**: Review and approve multiple generated checks at once with a streamlined interface
 - **Enhanced Error Handling**: Clear error messages and recovery options when generation fails
-- **Token Optimization**: Smarter AI model selection to stay within token limits while maintaining quality
 
 **New Workflow:**
 1. Navigate to Settings → Compliance → Checks
@@ -229,18 +396,6 @@ Significantly enhanced the bulk compliance check generation system with better r
 
 ---
 
-### Performance & Architecture Improvements
-
-**Compliance System**:
-- Optimized compliance history queries with better indexing
-- Streamlined token usage in AI generation (up to 50% reduction)
-- Improved autosave reliability in compliance check editor
-- Better caching strategies for frequently-accessed compliance data
-
-**AI Infrastructure Refactor**:
-- New provider abstraction layer supporting Anthropic, OpenAI, and other LLMs
-- Improved token counting and limit enforcement
-- Enhanced streaming support for real-time AI responses
 ---
 
 ### Bug Fixes & Quality Improvements
@@ -269,9 +424,9 @@ Significantly enhanced the bulk compliance check generation system with better r
 ## October 10, 2025
 
 - **Client Home page**: New simplified home view for client users showing their tickets, team members, and assigned training courses in one place—perfect for end-user portals.
-- **Compliance system performance upgrade**: Completely redesigned compliance caching system now supports running 100,000+ compliance checks simultaneously with incremental updates and zero-downtime refresh.
+- **Compliance system performance upgrade**: Significantly improved performance for large numbers of compliance checks with faster loading and updates.
 - **Enhanced impersonation support**: Full impersonation capability extended to the Home page, allowing MSPs to view the exact client experience.
-- **Ticket performance improvements**: Faster ticket list loading with optimized queries and improved refresh behavior.
+- **Ticket performance improvements**: Faster ticket list loading and improved refresh behavior.
 - **Multiple UI polish improvements**: Fixed ticket modal interactions, improved budget status handling, enhanced compliance filtering, and better dark mode support.
 
 ---
@@ -284,11 +439,11 @@ Significantly enhanced the bulk compliance check generation system with better r
 - **Budget management improvements**: Bulk status updates for budget line items and enhanced PDF export with optimized print layouts.
 - **Report PDF exports**: Export custom reports to PDF with all configured blocks and data visualizations.
 - **Enhanced mobile & tablet support**: Improved responsive design across all modules for better viewing on mobile and tablet devices.
-- **Integration settings refactor**: New slide-over drawer design with modular registry-based architecture for managing PSA integrations.
+- **Integration settings improvements**: New slide-over drawer design for managing PSA integrations.
 - **Improved tickets filtering**: Enhanced filter options with dark mode support and better scoping for tenant/company visibility.
 - **Survey analysis system**: AI-powered sentiment analysis with automated daily processing and detailed survey insights.
-- **Custom domain branding**: Dynamic logo resolution and simplified signin flow for white-label deployments.
-- **Central SSO relay**: Unified authentication flow supporting custom domains without per-domain OAuth app configuration.
+- **Custom domain branding**: Simplified signin flow for white-label deployments.
+- **Central SSO relay**: Unified authentication flow supporting custom domains.
 
 ---
 
